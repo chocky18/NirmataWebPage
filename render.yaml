@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: blog
-    buildCommand: "./build.sh"
-    env: python3
-    startCommand: "gunicorn blog.wsgi:application"
