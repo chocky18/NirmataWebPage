@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: NirmataWebPage
+    name: blog
     buildCommand: "./build.sh"
     env: python3
-    startCommand: "gunicorn NirmataWebPage.wsgi:application"
+    startCommand: "gunicorn blog.wsgi:application"
