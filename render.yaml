@@ -3,4 +3,4 @@ services:
     name: REPO
     buildCommand: "./build.sh"
     env: python3
-    startCommand: "gunicorn your_django_app_name.wsgi:application"
+    startCommand: "gunicorn REPO.wsgi:application"
