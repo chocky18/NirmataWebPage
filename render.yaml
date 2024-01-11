@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: REPO
+    buildCommand: "./build.sh"
+    env: python3
+    startCommand: "gunicorn your_django_app_name.wsgi:application"
