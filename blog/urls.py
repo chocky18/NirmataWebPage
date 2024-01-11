@@ -23,4 +23,4 @@ urlpatterns = [
     path('api/', include('blog.backend.urls')),
     path('admin/', admin.site.urls),
 ]
-urlpatterns += staticfiles_urlpatterns() # new
+# urlpatterns += staticfiles_urlpatterns() # new
