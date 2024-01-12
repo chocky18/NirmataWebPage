@@ -1,0 +1,40 @@
+{% extends "blog/layout/base.html" %}
+{% load static %}
+
+{% block title %}
+    Research Paper
+{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url('{% static "img/research-bg.jpg" %}')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>AI and EEG Transform Silent Thoughts to Text </h1>
+                        <h2 class="subheading"><p> Researchers created a revolutionary system that can non-invasively convert silent thoughts into text, offering new communication possibilities for people with speech impairments due to illnesses or injuries.</p> </h2>
+                        <span class="meta">Posted by
+                            <a href="#">Leilah Schubert </a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h3>View the Research Paper</h3>
+            <p>This is a research paper on a fascinating topic. You can view the complete paper directly on this page:</p>
+
+            <!-- Embed the PDF file directly -->
+            <embed src="https://neurosciencenews.com/ai-eeg-thoughts-to-text-25343/" type="application/pdf" width="100%" height="600px" />
+            
+            <!-- If the PDF file is local, you can use the static tag -->
+            <!-- <embed src="{% static 'blog/ResearchPapers/1.pdf' %}#toolbar=0" type="application/pdf" width="100%" height="600px" /> -->
+        </div>
+    </div>
+{% endblock %}

@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns # new
-
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', include('blog.client.urls')),
     path('api/', include('blog.backend.urls')),
     path('admin/', admin.site.urls),
+    # path('research-paper/', TemplateView.as_view(template_name='blog/research_paper.html'), name='research_paper'),
+    # path('research-paper/', ResearchPaperView.as_view(), name='research_paper'),
+    # path('post2/', 'repo/templates/blog/ai_n_egg_silent_thoughts_into_text.html', name='post2')
+    
 ]
 # urlpatterns += staticfiles_urlpatterns() # new

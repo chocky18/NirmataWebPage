@@ -1,0 +1,40 @@
+{% extends "blog/layout/base.html" %}
+{% load static %}
+
+{% block title %}
+    Research Paper
+{% endblock %}
+
+{% block header %}
+    <header class="masthead" style="background-image: url('{% static "img/research-bg.jpg" %}')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Crafting simulations using diffusion models </h1>
+                        <!-- <h2 class="subheading"><p> decoding of mental imagery via deep neural network-based Bayesian estimation</p> </h2> -->
+                        <span class="meta">Posted by
+                            <a href="#">Naresh Tinnaluri </a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h3>View the Research Paper</h3>
+            <p>This is a research paper on a fascinating topic. You can view the complete paper directly on this page:</p>
+
+            <!-- Embed the PDF file directly -->
+            <embed src="https://chockynaresh18.wixsite.com/consciousai/post/thought" type="application/pdf" width="100%" height="600px" />
+            
+            <!-- If the PDF file is local, you can use the static tag -->
+            <!-- <embed src="{% static 'blog/ResearchPapers/1.pdf' %}#toolbar=0" type="application/pdf" width="100%" height="600px" /> -->
+        </div>
+    </div>
+{% endblock %}

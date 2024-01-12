@@ -23,6 +23,7 @@ SECRET_KEY = '11a96%57qn*=aumpd&p0^t$(vamn&&jg_2tr^ly7hezxx2o#3%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# Add the following lines at the end of the file
 
 ALLOWED_HOSTS = ['*']
 
@@ -119,4 +120,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
